@@ -10,6 +10,9 @@
     margin: 0;
     padding: 0;
 }
+a {
+    text-decoration: none;
+}
 .menu-link {
     color: cornflowerblue;
     font-size: 16px;

@@ -2,26 +2,37 @@
     margin: 0;
     padding: 0;
 }
+
 a {
     text-decoration: none;
 }
-.header{
+
+.header {
     margin-top: 40px;
 }
-.top_info{
+
+top__content {
+    margin-top: 84;
+    margin-bottom: 162;
+}
+
+.top_info {
     margin-top: 101px;
 }
-.title{
+
+.title {
     margin-bottom: 17px;
 }
-.content_image{
+
+.content_image {
     margin-top: 84px;
 }
-.top_buttons{
+
+.top_buttons {
     margin-top: 37px;
 }
-.top_logos{
-    margin-top: 162px;
+
+.top_logos {
     padding-top: 97px;
     padding-bottom: 96px;
 }

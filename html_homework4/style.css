@@ -18,6 +18,7 @@ a {
 
 .header {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     margin-top: 40px;
@@ -25,7 +26,9 @@ a {
 
 .header__links {
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
     gap: 40px;
     color: #000;
     font-size: 14px;
@@ -34,12 +37,8 @@ a {
     line-height: normal;
 }
 
-.header_link_home {
+.link_home {
     color: #F25822;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
 }
 
 .top__content {
@@ -77,6 +76,7 @@ a {
 
 .top_buttons {
     display: flex;
+    flex-direction: row;
     gap: 72px;
     margin-top: 37px;
 }

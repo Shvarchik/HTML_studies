@@ -47,17 +47,24 @@ a {
 }
 
 .top__content {
+    padding-right: calc(50% - 800px);
+    padding-left: calc(50% - 800px);
     display: flex;
     align-items: center;
-    justify-content: flex-start;
     background: #F1E4E6;
     margin-bottom: 65px;
+    gap: 63px 16px;
 }
 
-.title__box {
+.top__image {
+    width: 50%;
+}
+
+.titles {
     display: flex;
-    gap: 16px;
+    flex-direction: column;
     text-align: left;
+    overflow-wrap: break-word;
 }
 
 .title {
@@ -100,6 +107,8 @@ a {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    background-size: contain;
+    background-position: center;
 }
 
 .item1 {
@@ -150,20 +159,21 @@ a {
 
 .products__content {
     margin-top: 48px;
-    margin-bottom: 48px;
+    margin-bottom: 63px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
 
 }
 
-.products__item {
+.product__item {
     display: flex;
     flex-direction: column;
     padding-bottom: 20px;
+    background-color: #F8F8F8;
 }
 
-.products__foto {
+.product__foto {
     margin-bottom: 24px;
 }
 
@@ -191,4 +201,59 @@ a {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+}
+
+.browse__button {
+    margin: 0 auto;
+    display: block;
+    border: 1px solid #FF6A6A;
+    padding: 15px 39px;
+    color: #F26376;
+    background: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 60px;
+}
+
+/* для планшета */
+@media (max-width: 1025px) {
+    .center {
+        padding-left: calc(50% - 367px);
+        padding-right: calc(50% - 367px);
+    }
+
+    .top__content {
+        padding-right: calc(50% - 385px);
+        padding-left: calc(50% - 385px);
+        gap: 39px 16px;
+    }
+
+
+    .title {
+        font-size: 44px;
+    }
+
+    .subtitle {
+        font-size: 24px;
+    }
+
+    .offer {
+        margin-bottom: 110px;
+        gap: 19px;
+    }
+
+    .products__title {
+        margin-bottom: 3px;
+    }
+
+    .products__content {
+        margin-top: 73px;
+        margin-bottom: 32px;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+
+
 }

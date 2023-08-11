@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- <script src="https://kit.fontawesome.com/7e862aa4d2.js" crossorigin="anonymous"></script> -->
+    <title>Форма</title>
+</head>
+
+<body>
+    <section>
+        <h2>Заполните форму</h2>
+        <form action="#" class="form">
+            <label for="name">Имя</label>
+            <input autofocus required type="text" id="name">
+            <label for="mail">Email</label>
+            <input required type="email" id="mail">
+            <label for="password">Пароль</label>
+            <input required type="password" id="password">
+            <label for="age">Возраст</label>
+            <input required min="16" type="number" id="age">
+            <label for="birthday">Дата рождения</label>
+            <input required type="date" id="birthday">
+            <label for="tel">Номер телефона</label>
+            <input required type="text" pattern="\+?[0-9\s\-\(\)]+" id="tel">
+            <label for="range">Диапазон</label>
+            <input type="range" min="0" max="10" step="1" id="range">
+            <button type="submit">Отправить</button>
+        </form>
+
+        <input type="checkbox" class="custom-checkbox" id="happy" name="happy" value="yes">
+
+        <label for="happy">Text</label>
+
+    </section>
+</body>
+
+</html>

@@ -6,6 +6,12 @@
     margin-bottom: 15px;
 }
 
+.rounded {
+    background-color: #EEDDFF;
+    border: 3px solid #7922CC;
+    border-radius: 100px 15px 15px 100px;
+}
+
 .custom-checkbox {
     position: absolute;
     z-index: -1;

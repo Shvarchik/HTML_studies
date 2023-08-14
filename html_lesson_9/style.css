@@ -1,0 +1,172 @@
+﻿.menu__list {
+    margin: 20px;
+}
+
+/* ЗАДАНИЕ 1 */
+
+.menu__link:hover {
+    color: red;
+}
+
+.menu__list:nth-child(3) .menu__link {
+    background-color: orange;
+}
+
+.menu__link:active {
+    color: rgb(75, 223, 75);
+}
+
+.menu__list:first-child .menu__link {
+    text-decoration: none;
+}
+
+.menu__list:last-child .menu__link {
+    font-weight: bold;
+}
+
+/* ЗАДАНИЕ 2 */
+
+.product {
+    width: 250px;
+    padding: 24px;
+    border: 1px solid #000;
+    position: relative;
+}
+
+.product__img {
+    background-color: forestgreen;
+    height: 150px;
+}
+
+.product__new:hover::after {
+    content: 'new';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 35px;
+    height: 35px;
+    padding-top: 10px;
+    background-color: red;
+    color: white;
+    text-align: center;
+}
+
+.product__sale::before {
+    content: 'sale';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 35px;
+    height: 35px;
+    padding-top: 10px;
+    background-color: orange;
+    color: white;
+    text-align: center;
+}
+
+/* ЗАДАНИЕ 3 */
+
+.icons {
+    margin-top: 20px;
+    width: 50px;
+    height: 50px;
+}
+
+.icons__item:hover path {
+    fill: purple;
+}
+
+.icons__item:active path {
+    fill: yellow;
+}
+
+/* ЗАДАНИЕ 4 */
+
+.item {
+    width: 150px;
+    height: 86px;
+    background-color: forestgreen;
+    border: 1px solid #000;
+    transition: transform 1s;
+}
+
+.item_1:hover {
+    transform: translateX(50px);
+}
+
+.item_2:hover {
+    transform: scale(2);
+}
+
+.item_3:hover {
+    transform: rotate(60deg);
+}
+
+/* ЗАДАНИЕ 5 */
+
+.content_5 {
+    margin-top: 100px;
+    margin-left: 300px;
+    margin-bottom: 300px;
+    position: relative;
+}
+
+.item_5 {
+    position: absolute;
+    width: 150px;
+    height: 60px;
+    /* border: 1px solid #000; */
+    background-color: rgb(11, 151, 151);
+}
+
+.content_5__item_2 {
+    transform: rotate(45deg);
+    background-color: rgb(49, 180, 180);
+}
+
+.content_5__item_3 {
+    transform: rotate(90deg);
+    background-color: rgb(59, 229, 229);
+}
+
+.content_5__item_4 {
+    transform: rotate(135deg);
+    background-color: rgb(12, 244, 244);
+}
+
+/* ЗАДАНИЕ 6 */
+
+@keyframes shadow-pop-tr {
+    0% {
+        -webkit-box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e;
+        box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e;
+        -webkit-transform: translateX(0) translateY(0);
+        transform: translateX(0) translateY(0);
+    }
+
+    100% {
+        -webkit-box-shadow: 1px -1px #3e3e3e, 2px -2px #3e3e3e, 3px -3px #3e3e3e, 4px -4px #3e3e3e, 5px -5px #3e3e3e, 6px -6px #3e3e3e, 7px -7px #3e3e3e, 8px -8px #3e3e3e;
+        box-shadow: 1px -1px #3e3e3e, 2px -2px #3e3e3e, 3px -3px #3e3e3e, 4px -4px #3e3e3e, 5px -5px #3e3e3e, 6px -6px #3e3e3e, 7px -7px #3e3e3e, 8px -8px #3e3e3e;
+        -webkit-transform: translateX(-8px) translateY(8px);
+        transform: translateX(-8px) translateY(8px);
+    }
+}
+
+.button {
+    width: 150px;
+    height: 50px;
+    background-color: purple;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    font-family: sans-serif;
+    font-size: 18px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+}
+
+.button:hover {
+    animation: shadow-pop-tr 0.3s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+}

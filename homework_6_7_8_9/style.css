@@ -272,11 +272,14 @@ a {
 }
 
 .subscribe__quote {
+    max-width: 359px;
+    margin: auto;
     color: #222224;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    text-align: center;
 }
 
 .subscribe__title {
@@ -452,7 +455,6 @@ a {
     }
 
     .top__titles {
-        /* width: auto; */
         margin-top: 148px;
         margin-bottom: 148px;
     }

@@ -136,7 +136,7 @@ a {
 }
 
 .products {
-    position: relative;
+    margin-bottom: 95px;
 }
 
 .products__title {
@@ -208,8 +208,8 @@ a {
 .browse__button {
     max-width: 212px;
     text-align: center;
-    margin: 0 auto 60px;
     display: block;
+    margin: auto;
     border: 1px solid #FF6A6A;
     padding: 15px 39px;
     color: #F26376;
@@ -221,17 +221,13 @@ a {
 }
 
 .advantages {
+    padding-top: 103px;
+    padding-bottom: 104px;
     background: #222224;
     display: flex;
     gap: 30px;
     text-align: center;
     justify-content: center;
-
-}
-
-.advantages__item {
-    padding: 103px 20px;
-    padding-bottom: 103px;
 }
 
 .advantages__title {
@@ -261,17 +257,21 @@ a {
 .subscribe__item {
     width: 50%;
     text-align: center;
+    margin-top: 150px;
+    margin-bottom: 156px;
+}
+
+.subscribe__item_left {
+    margin-top: 97px;
+    margin-bottom: 126px;
 }
 
 .subscribe__item__foto {
     display: block;
-    margin: 97px auto 30px auto;
-
+    margin: auto auto 30px;
 }
 
 .subscribe__quote {
-    max-width: 359 px;
-    margin-bottom: 126px;
     color: #222224;
     font-size: 20px;
     font-style: normal;
@@ -285,7 +285,6 @@ a {
     font-style: normal;
     font-weight: 700;
     line-height: 167.2%;
-    margin-top: 150px;
     margin-bottom: 28px;
 }
 
@@ -294,9 +293,13 @@ a {
     font-weight: 400;
 }
 
+.subscribe__form {
+    display: flex;
+    justify-content: center;
+}
+
 .input__email {
     background-color: #E1E1E1;
-    width: 256px;
     height: 49px;
     border: 0 #E1E1E1;
     border-radius: 100px 15px 15px 100px;
@@ -309,7 +312,6 @@ a {
 }
 
 .subscribe__button {
-    width: 100px;
     height: 49px;
     background-color: #F16D7F;
     border: 0 #F16D7F;
@@ -320,6 +322,8 @@ a {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    padding-left: 8px;
+    padding-right: 8px;
 }
 
 .footer {
@@ -327,7 +331,7 @@ a {
     background-color: #222224;
     padding-top: 30px;
     padding-bottom: 30px;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -352,8 +356,8 @@ a {
     }
 
     .center_wide {
-        padding-right: calc(50% - 385px);
-        padding-left: calc(50% - 385px);
+        padding-right: calc(50% - 335px);
+        padding-left: calc(50% - 335px);
     }
 
     .header {
@@ -385,6 +389,10 @@ a {
         grid-template-rows: 168px 116px;
     }
 
+    .products {
+        margin-bottom: 64px;
+    }
+
     .products__title {
         margin-bottom: 3px;
     }
@@ -394,6 +402,30 @@ a {
         margin-bottom: 32px;
         grid-template-columns: repeat(2, 1fr);
         gap: 16px;
+    }
+
+    .advantages {
+        padding: 48px calc(50% - 180px) 64px;
+        flex-direction: column;
+        gap: 48px;
+    }
+
+    .advantages__title {
+        margin-top: 25px;
+        margin-bottom: 16px;
+    }
+
+    .subscribe {
+        flex-direction: column;
+        align-items: center;
+        gap: 48px;
+        background-size: cover;
+        padding: 64px calc(50% - 278px) 140px;
+    }
+
+    .subscribe__item {
+        margin: auto;
+        width: auto;
     }
 }
 
@@ -443,6 +475,10 @@ a {
         grid-column: auto;
     }
 
+    .products {
+        margin-bottom: 96px;
+    }
+
     .products__content {
         margin-top: 64px;
         margin-bottom: 40px;
@@ -454,4 +490,43 @@ a {
     .product__foto {
         width: 100%;
     }
+
+    .advantages {
+        padding: 48px calc(50% - 174px) 81px;
+        gap: 46px;
+    }
+
+    .advantages__title {
+        margin-top: 18px;
+        margin-bottom: 14px;
+    }
+
+    .subscribe {
+        padding: 64px calc(50% - 171px) 109px;
+        gap: 59px;
+    }
+
+    .subscribe__item {
+        margin: auto 0;
+    }
+
+    .subscribe__title {
+        margin-bottom: 22px;
+        line-height: 90%;
+    }
+
+    .subscribe__text {
+        font-size: 14px;
+    }
+
+    .subscribe__button {
+        height: 47px;
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    .input__email {
+        height: 47px;
+    }
+
 }

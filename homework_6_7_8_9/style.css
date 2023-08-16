@@ -22,7 +22,7 @@ a {
 }
 
 .top {
-    overflow: hidden;
+    /* overflow: hidden; */
     position: relative;
 }
 
@@ -36,7 +36,10 @@ a {
     justify-content: space-between;
     align-items: center;
     box-sizing: border-box;
+}
 
+.header label {
+    cursor: pointer;
 }
 
 .header__left {
@@ -273,14 +276,40 @@ a {
     flex-direction: column;
     padding-bottom: 20px;
     background-color: #F8F8F8;
-}
-
-.product__foto:hover {
-    filter: brightness(40%);
+    position: relative;
 }
 
 .product__foto {
     margin-bottom: 24px;
+    transition: filter .35s ease;
+}
+
+.product__button {
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    padding: 11px 16px 9px 14px;
+    border: solid white;
+    border-width: thin;
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    background-color: transparent;
+    color: #FFF;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    opacity: 0;
+    transition: opacity .35s ease;
+}
+
+.product__item:hover .product__foto {
+    filter: brightness(40%);
+}
+
+.product__item:hover .product__button {
+    opacity: 1;
 }
 
 .product__name {
@@ -322,6 +351,12 @@ a {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+}
+
+.browse__button:hover {
+    border: 1px solid #FF6A6A;
+    color: #FFFFFF;
+    background: #F16D7F;
 }
 
 .advantages {
@@ -433,6 +468,10 @@ a {
     padding-right: 8px;
 }
 
+.subscribe__button:hover {
+    background-color: #f2465d;
+}
+
 .footer {
     display: flex;
     background-color: #222224;
@@ -453,6 +492,14 @@ a {
 .footer__links {
     display: flex;
     gap: 7px;
+}
+
+.footer__icon:hover .path1 {
+    fill: #F16D7F;
+}
+
+.footer__icon:hover .path2 {
+    fill: #FFFFFF;
 }
 
 /* для планшета */
@@ -637,5 +684,4 @@ a {
     .input__email {
         height: 47px;
     }
-
 }

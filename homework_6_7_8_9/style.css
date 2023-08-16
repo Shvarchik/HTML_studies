@@ -21,13 +21,22 @@ a {
     padding-left: calc(50% - 800px);
 }
 
+.top {
+    overflow: hidden;
+    position: relative;
+}
+
 .header {
+    max-height: 75px;
     display: flex;
-    height: 75px;
+    padding-top: 18px;
+    padding-bottom: 19px;
     background: #222222;
     overflow: hidden;
     justify-content: space-between;
     align-items: center;
+    box-sizing: border-box;
+
 }
 
 .header__left {
@@ -40,6 +49,97 @@ a {
     display: flex;
     gap: 33px;
     align-items: center;
+}
+
+.header__cart {
+    position: relative;
+    left: 0;
+}
+
+.header__cart__counter {
+    position: absolute;
+    width: 19px;
+    height: 19px;
+    background-image: url(image/cart_ellipse.svg);
+    background-size: cover;
+    top: -25%;
+    left: 75%;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+    color: white;
+    z-index: -1;
+}
+
+.header__cart:hover .header__cart__counter {
+    z-index: 2;
+}
+
+.header__check {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+}
+
+.header__check:checked~.menu {
+    right: 0;
+}
+
+.menu {
+    position: absolute;
+    top: 75px;
+    right: -232px;
+    z-index: 1;
+    transition: right 1s;
+    padding: 32px 32px 32px;
+    background-color: #FFF;
+    width: 232px;
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+    box-sizing: border-box;
+}
+
+.menu__list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu__general__title {
+    color: #000;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 24px;
+}
+
+.menu__general {
+    gap: 20px;
+}
+
+.menu__detail__title {
+    color: #F16D7F;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.menu__detail {
+    padding-left: 21px;
+    gap: 11px;
+    margin-top: 12px;
+}
+
+.menu__link {
+    color: #6F6E6E;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 11px;
 }
 
 .top__content {
@@ -173,6 +273,10 @@ a {
     flex-direction: column;
     padding-bottom: 20px;
     background-color: #F8F8F8;
+}
+
+.product__foto:hover {
+    filter: brightness(40%);
 }
 
 .product__foto {
@@ -364,8 +468,7 @@ a {
     }
 
     .header {
-        padding-right: 0;
-        padding-left: 0;
+        padding: 18px 0 19px 0;
         justify-content: space-around;
         gap: 20vw;
     }
@@ -438,6 +541,10 @@ a {
     .center {
         padding-left: 16px;
         padding-right: 16px;
+    }
+
+    .header {
+        gap: 15vw;
     }
 
     .top__content {

@@ -399,6 +399,8 @@ a {
 .subscribe {
     background-image: url(image/photo_subscribe.png);
     display: flex;
+    background-size: cover;
+    background-position: center;
 }
 
 .subscribe__item {
@@ -454,11 +456,16 @@ a {
     border: 0 #E1E1E1;
     border-radius: 100px 15px 15px 100px;
     padding-left: 22px;
+    padding-right: 20px;
     color: #222224;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+}
+
+.input__email:focus {
+    outline-color: #F16D7F;
 }
 
 .subscribe__button {

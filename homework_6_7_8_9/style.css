@@ -11,6 +11,10 @@ a {
     text-decoration: none;
 }
 
+.wrapper {
+    overflow: hidden;
+}
+
 .center {
     padding-left: calc(50% - 570px);
     padding-right: calc(50% - 570px);
@@ -22,7 +26,6 @@ a {
 }
 
 .top {
-    /* overflow: hidden; */
     position: relative;
 }
 

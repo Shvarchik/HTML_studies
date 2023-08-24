@@ -1,0 +1,131 @@
+﻿<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link active" aria-current="page" href="#">Главная</a>
+                    <a class="nav-link" href="#">Каталог</a>
+                    <a class="nav-link" href="#">Контакты</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <h3>
+        Fancy display heading
+        <small class="text-body-secondary">With faded secondary text</small>
+    </h3>
+
+    <nav id="navbar-example3" class="navbar navbar-light bg-light flex-column align-items-stretch p-3">
+        <a class="navbar-brand" href="#">МЕНЮ</a>
+        <nav class="nav nav-pills flex-column">
+            <a class="nav-link" href="#item-1">Item 1</a>
+            <nav class="nav nav-pills flex-column">
+                <a class="nav-link ms-3 my-1" href="#item-1-1">Item 1-1</a>
+                <a class="nav-link ms-3 my-1" href="#item-1-2">Item 1-2</a>
+            </nav>
+            <a class="nav-link" href="#item-2">Item 2</a>
+            <a class="nav-link" href="#item-3">Item 3</a>
+            <nav class="nav nav-pills flex-column">
+                <a class="nav-link ms-3 my-1" href="#item-3-1">Item 3-1</a>
+                <a class="nav-link ms-3 my-1" href="#item-3-2">Item 3-2</a>
+            </nav>
+        </nav>
+    </nav>
+
+    <div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-offset="0" tabindex="0">
+        <h4 id="item-1">Item 1</h4>
+        <p>...</p>
+        <h5 id="item-1-1">Item 1-1</h5>
+        <p>...</p>
+        <h5 id="item-1-2">Item 1-2</h5>
+        <p>...</p>
+        <h4 id="item-2">Item 2</h4>
+        <p>...</p>
+        <h4 id="item-3">Item 3</h4>
+        <p>...</p>
+        <h5 id="item-3-1">Item 3-1</h5>
+        <p>...</p>
+        <h5 id="item-3-2">Item 3-2</h5>
+        <p>...</p>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, quia officiis! Rem mollitia reprehenderit
+        perspiciatis reiciendis aliquid, praesentium ipsam vitae molestiae ut sapiente non, dolores nemo ducimus tenetur
+        hic! Fuga a cumque harum sunt in aspernatur, dolores error alias commodi magni eum facilis nam necessitatibus
+        ipsa cupiditate eius praesentium perferendis. Doloremque accusamus praesentium labore amet nemo delectus vitae
+        quisquam nostrum earum nam. Voluptatum quod architecto similique quis optio sed, reprehenderit asperiores?
+        Facere debitis atque blanditiis laudantium et animi, est at rem assumenda nam eligendi aliquam quos odit
+        reprehenderit pariatur ullam ex non quo veritatis neque harum! Distinctio placeat saepe vero!</p>
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://avatars.mds.yandex.net/i?id=67bb1993ea685ef7ac207b59c0776a02-5169626-images-thumbs&n=13"
+                    class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="https://avatars.mds.yandex.net/i?id=67bb1993ea685ef7ac207b59c0776a02-5169626-images-thumbs&n=13"
+                    class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="https://avatars.mds.yandex.net/i?id=67bb1993ea685ef7ac207b59c0776a02-5169626-images-thumbs&n=13"
+                    class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="https://avatars.mds.yandex.net/i?id=67bb1993ea685ef7ac207b59c0776a02-5169626-images-thumbs&n=13"
+                    class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, quia officiis! Rem mollitia reprehenderit
+        perspiciatis reiciendis aliquid, praesentium ipsam vitae molestiae ut sapiente non, dolores nemo ducimus tenetur
+        hic! Fuga a cumque harum sunt in aspernatur, dolores error alias commodi magni eum facilis nam necessitatibus
+        ipsa cupiditate eius praesentium perferendis. Doloremque accusamus praesentium labore amet nemo delectus vitae
+        quisquam nostrum earum nam. Voluptatum quod architecto similique quis optio sed, reprehenderit asperiores?
+        Facere debitis atque blanditiis laudantium et animi, est at rem assumenda nam eligendi aliquam quos odit
+        reprehenderit pariatur ullam ex non quo veritatis neque harum! Distinctio placeat saepe vero!</p>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

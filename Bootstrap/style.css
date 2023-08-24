@@ -1,0 +1,19 @@
+﻿/* .nav-link {
+    color: white;
+} */
+
+.navbar-nav {
+    align-items: flex-end;
+}
+
+p {
+    margin: 30px;
+}
+
+.carousel-control-next-icon {
+    background-image: url(../homework_6_7_8_9/image/cart.svg);
+}
+
+.carousel-indicators [data-bs-target] {
+    background-color: red;
+}

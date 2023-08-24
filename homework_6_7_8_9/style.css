@@ -35,7 +35,6 @@ a {
     padding-top: 18px;
     padding-bottom: 19px;
     background: #222222;
-    overflow: hidden;
     justify-content: space-between;
     align-items: center;
     box-sizing: border-box;
@@ -55,6 +54,7 @@ a {
     display: flex;
     gap: 33px;
     align-items: center;
+    padding-right: 15px;
 }
 
 .header__cart {
@@ -270,20 +270,25 @@ a {
     margin-bottom: 63px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-
+    grid-column-gap: 30px;
+    grid-row-gap: 25px;
 }
 
 .product__item {
     display: flex;
     flex-direction: column;
-    padding-bottom: 20px;
     background-color: #F8F8F8;
     position: relative;
 }
 
+.product__info {
+    padding: 24px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
 .product__foto {
-    margin-bottom: 24px;
     transition: filter .35s ease;
 }
 
@@ -324,7 +329,6 @@ a {
 }
 
 .product__name {
-    margin-bottom: 12px;
     color: #000;
     font-size: 13px;
     font-style: normal;
@@ -333,7 +337,6 @@ a {
 }
 
 .product__text {
-    margin-bottom: 18px;
     color: #5D5D5D;
     font-size: 14px;
     font-style: normal;
@@ -380,6 +383,10 @@ a {
     justify-content: center;
 }
 
+.advantages__item {
+    width: calc((100% - 60px) / 3);
+}
+
 .advantages__title {
     margin-top: 28px;
     margin-bottom: 15px;
@@ -397,6 +404,7 @@ a {
     font-style: normal;
     font-weight: 300;
     line-height: normal;
+
 }
 
 .subscribe {
@@ -506,11 +514,13 @@ a {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    margin-left: 10px;
 }
 
 .footer__links {
     display: flex;
     gap: 7px;
+    margin-right: 10px;
 }
 
 .footer__icon:hover .path1 {
@@ -576,10 +586,19 @@ a {
         gap: 16px;
     }
 
+    .product__info {
+        padding: 25px 28px 20px 16px;
+        gap: 12px 18px;
+    }
+
     .advantages {
         padding: 48px calc(50% - 180px) 64px;
         flex-direction: column;
         gap: 48px;
+    }
+
+    .advantages__item {
+        width: 100%;
     }
 
     .advantages__title {
